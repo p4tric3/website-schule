@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700');
+
+html {
+	/*text-align: center;*/
+}
+
+body {
+  background-image: url('img/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+button {
+	margin-top: 10px;
+	padding: 10px;
+	
+	color: #FFF;
+	background-color: #000000;
+	
+	border: solid 3px #000000;
+    font-family: Raleway;
+	
+	transition: ease-in-out all 300ms;
+}
+
+.drpdwnaw {
+    font-family: Raleway;
+    font-size: 15px;
+}
+
+.toptext {
+    color: #e7e7e7;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+
+    font-size: 70px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    font-weight: 400;
+
+    animation: travel 2s;
+}
+
+.downtext {
+    color: #e7e7e7;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    font-weight: 400;
+
+    animation: travel 4s;
+}
+
+.maintext {
+    color: #e7e7e7;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 100px;
+
+    font-weight: 400;
+
+    animation: travel 6s;
+}
+
+.maintextbox {
+    padding: 10;
+}
+
+strong {
+    font-weight: 800;
+}
+
+.dropbtn {
+    background-color: #f7c230;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d1a62f;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0);
+    z-index: 1;
+  }
+  
+  .homebtn {
+    padding-right: 77%;
+}
+
+.topbtnrow {
+    padding-left: 0%;
+}
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropbtn:hover {
+    background-color: #ddd;
+  }
+  
+  @keyframes under {
+    from {
+        opacity: 0.0;
+        transform: translateY(-20px);
+    }
+
+    to { 
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes travel {
+    from {
+        opacity: 0.01;
+        transform: translateY(130px);
+    }
+
+    to { 
+        transform: translateY(0px);
+    }
+}
