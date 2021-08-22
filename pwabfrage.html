@@ -1,24 +1,27 @@
 <html>
 <head>
 <title>Passwort-Abfrage</title>
-<script type="text/javascript">
-<!--
-function passw()
-{
-if(document.f1.pass.value=="Passwort")
-document.location.href="index.html";
-else
-alert("Falsches Passwort");
+<script LANGUAGE="JavaScript">
+function dialog3() {
+var stop ="ende"
+stop = prompt("Geben sie ihr Passwort ein.","")
+while (stop != "Dein Passwort") {
+stop = prompt("Geben sie das Passwort ein.","")
+}
+window.open('Datei.htm', 'Titel', 'height=500,width=500');
 }
 //-->
 </script>
-</head>
-<body>
-Um hier weiterzukommen m&uuml;ssen sie sich einloggen!</br>
-Geben sie bitte hier ihr Passwort ein.</br>
-<form name="f1">
-<input type="password" name="pass" size="15">
+<meta name="generator" content="Marlin-b">
+<form>
+<div align="center"><center>
+
+<font face="Times New Roman">
+</font></p>
+
+
+<font face="Times New Roman"><input TYPE="BUTTON" VALUE=" Login" onClick="dialog3()"></font></left></p>
+</div>
 </form>
-<h3>[url="javascript:passw()"]Weiter[/url]</h3>
 </body>
 </html>
